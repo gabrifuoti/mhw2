@@ -15,12 +15,12 @@ function showAll(event){
     page_block.classList.add('hidden');
     
     if(div=="showall1"){
-        const madeforyou_hidden = document.querySelector("#hidden1");  
-        madeforyou_hidden.classList.remove('hidden');
+      const madeforyou_hidden = document.querySelector("#hidden1");  
+      madeforyou_hidden.classList.remove('hidden');
     }
     if(div=="showall2"){    
-        const releases_hidden = document.querySelector("#hidden2");
-        releases_hidden.classList.remove('hidden');
+      const releases_hidden = document.querySelector("#hidden2");
+      releases_hidden.classList.remove('hidden');
     }
 }    
 
