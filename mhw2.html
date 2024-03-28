@@ -1,0 +1,481 @@
+<html>
+
+<head>
+    <title>Spotify 2.0 • Gabriele Fuoti</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="images/logo.png" rel="icon">
+    <link href="https://fonts.googleapis.com/css?family=Shippori Mincho" rel="stylesheet">
+    <link href="css/mhw2.css" rel="stylesheet">
+    <script src="mhw2.js" defer></script>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="flex-left">
+
+            <div class="home-search">
+                <a class="link" href="#">
+                    <div class="flex-home"> <span> <img class="icon" src="images/home.png"><strong>Home</strong></span>
+                    </div>
+                </a>
+                <a class="link" href="#">
+                    <div class="flex-search"> <span> <img class="icon" src="images/search.png">Search</span> </div>
+                </a>
+            </div>
+
+            <div class="library">
+                <div class="flex-library">
+                    <span>
+                        <a class="link" href="#">
+                            <img class="icon" src="images/library.png">
+                            Your Library
+                        </a>
+                    </span>
+                    <span>
+                        <a class="link container" href="#"><img class="icon-dx" id="create-new-playlist"
+                                src="images/plus.png">
+                            <div class="overlay">Create new playlist</div>
+                        </a>
+                        <a class="link" href="#"><img class="icon-dx" src="images/arrow.png"></a>
+                    </span>
+                </div>
+
+                <nav>
+                    <div>
+                        <a href="#" class="button-playlist-artist">Playlists</a>
+                        <a href="#" class="button-playlist-artist">Artists</a>
+                    </div>
+                </nav>
+                <div class="flex-search-library">
+                    <a class="link" href="#">
+                        <div class="flex-search"><img class="icon" src="images/search.png"> </div>
+                    </a>
+                    <span>
+                        <a class="link" href="#">Recents<img class="icon-dx" src="images/recents.png"></a>
+                    </span>
+                </div>
+
+                <div id="playlist-list" class="flex-list-playlist-artist">
+                    <div>
+                        <a class="link-list" href="#">
+                            <img class="img-list-playlist" src="images/playlist1.png">
+                            <span>
+                                <strong> Liked Songs </strong><br>
+                                Playlist • 105 songs
+                            </span>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="link-list" href="#">
+                            <img class="img-list-playlist" src="images/playlist2.png">
+                            <span>
+                                <strong> This is Travis Scott </strong><br>
+                                Playlist • 100 songs
+                            </span>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="link-list" href="#">
+                            <img class="img-list-artist" src="images/playlist3.png">
+
+                            <span>
+                                <strong> 21 Savage </strong><br>
+                                Artist
+                            </span>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="link-list" href="#">
+                            <img class="img-list-playlist" src="images/playlist4.png">
+                            <span>
+                                <strong> Love You </strong><br>
+                                Playlist • 153 songs
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="flex-right">
+            <div class="homepage">
+
+                <div class="container-icons-home">
+                    <span>
+                        <a class="link-list" href="#">
+                            <img class="icon-home" id="arrow-left" src="images/arrow-left.png">
+                        </a>
+                        <a class="link-list" href="#">
+                            <img class="icon-home" src="images/arrow-right.png">
+                        </a>
+                    </span>
+                    <span>
+                        <a class="link-list container" href="#">
+                            <img class="icon-home" src="images/notification.png">
+                            <div class="overlay">What's new</div>
+                        </a>
+                        <a class="link-list container" href="#">
+                            <img class="icon-home" src="images/profile.png">
+                            <div class="overlay">Account</div>
+                        </a>
+                    </span>
+                </div>
+
+                <div class="hidden" id="hidden1">
+                    <div class="flex-showall">
+                        <span>
+                            <a class="link-list" href="#">
+                                <strong>
+                                    Made For Gabriele Fuoti
+                                </strong>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="made-for-you">
+                        <div class="item-made-for-you">
+                            <img class="img-list-dmix" src="images/dmix1.png">
+                            <span>
+                                <strong> Daily Mix 1 </strong><br>
+                                Travis Scott, 21 Savage, Mac Miller and more
+
+                            </span>
+                        </div>
+                        <div class="item-made-for-you">
+                            <img class="img-list-dmix" src="images/dmix2.png">
+                            <span>
+                                <strong> Daily Mix 2 </strong><br>
+                                Gemitaiz, Blanco, Kid Yugi and more
+                            </span>
+                        </div>
+                        <div class="item-made-for-you">
+                            <img class="img-list-dmix" src="images/dmix3.png">
+                            <span>
+                                <strong> Daily Mix 3 </strong><br>
+                                Gazzelle, Mahmood, sangiovanni and more
+                            </span>
+                        </div>
+                        <div class="item-made-for-you">
+                            <img class="img-list-dmix" src="images/dmix4.png">
+                            <span>
+                                <strong> Daily Mix 4 </strong><br>
+                                Post Malone, Juice WRLD, Lyrical Lemonade and more
+                            </span>
+                        </div>
+                        <div class="item-made-for-you">
+                            <img class="img-list-dmix" src="images/dmix5.png">
+                            <span>
+                                <strong> Daily Mix 5 </strong><br>
+                                Twentyone Pilots, Lana del Rey, Coldplay and more
+                            </span>
+                        </div>
+                        <div class="item-made-for-you">
+                            <img class="img-list-dmix" src="images/dmix6.png">
+                            <span>
+                                <strong> Daily Mix 6 </strong><br>
+                                Drake, Tyla, SZA and more
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden" id="hidden2">
+                    <div class="flex-showall">
+                        <span>
+                            <a class="link-list" href="#">
+                                <strong>
+                                    New releases for you
+                                </strong>
+
+                            </a>
+                        </span>
+                    </div>
+                    <div class="new-releases">
+                        <div class="item-made-for-you">
+                            <img class="img-list-dmix" src="images/new1.png">
+                            <span>
+                                <strong> RADIO SAKURA </strong>
+                            </span>
+                            <br>
+                            <span>
+                                Rose Villain
+                            </span>
+                        </div>
+                        <div class="item-made-for-you">
+                            <img class="img-list-dmix" src="images/new2.png">
+                            <span>
+                                <strong> IL CORAGGIO DEI BAMBINI </strong>
+                            </span>
+                            <br>
+                            <span>
+                                Geolier
+                            </span>
+                        </div>
+                        <div class="item-made-for-you">
+                            <img class="img-list-dmix" src="images/new3.png">
+                            <span>
+                                <strong> I Nomi del Diavolo </strong>
+                            </span>
+                            <br>
+                            <span>
+                                Kid Yugi
+                            </span>
+                        </div>
+                        <div class="item-made-for-you">
+                            <img class="img-list-dmix" src="images/new4.png">
+                            <span>
+                                <strong> JACKBOYS </strong>
+                            </span>
+                            <br>
+                            <span>
+                                JACKBOYS
+                            </span>
+                        </div>
+                        <div class="item-made-for-you">
+                            <img class="img-list-dmix" src="images/new5.png">
+                            <span>
+                                <strong> For All The Dogs </strong>
+                            </span>
+                            <br>
+                            <span>
+                                Drake
+                            </span>
+                        </div>
+                        <div class="item-made-for-you">
+                            <img class="img-list-dmix" src="images/new6.png">
+                            <span>
+                                <strong> WE DON'T TRUST YOU </strong>
+                            </span>
+                            <br>
+                            <span>
+                                Future, Metro Boomin
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="homepage-to-hidden">
+                    <div>
+                        <nav>
+                            <a href="#" class="button-playlist-artist-current">All</a>
+                            <a href="#" class="button-playlist-artist">Music</a>
+                            <a href="#" class="button-playlist-artist">Podcasts</a>
+                        </nav>
+                    </div>
+                    <div class="recents">
+                        <div class="last-8">
+                            <div class="item-last-8">
+                                <img class="img-list-playlist" src="images/playlist2.png">
+                                <span>
+                                    <strong> Travis Scott </strong>
+                                </span>
+                            </div>
+                            <div class="item-last-8">
+                                <img class="img-list-playlist" src="images/playlist1.png">
+                                <span>
+                                    <strong> Liked Songs </strong>
+                                </span>
+                            </div>
+                            <div class="item-last-8">
+                                <img class="img-list-playlist" src="images/playlist5.png">
+                                <span>
+                                    <strong> This is Annalisa </strong>
+                                </span>
+                            </div>
+                            <div class="item-last-8">
+                                <img class="img-list-playlist" src="images/playlist3.png">
+                                <span>
+                                    <strong> 21 Savage </strong>
+                                </span>
+                            </div>
+                            <div class="item-last-8">
+                                <img class="img-list-playlist" src="images/playlist6.png">
+                                <span>
+                                    <strong> Astroworld </strong>
+                                </span>
+                            </div>
+                            <div class="item-last-8">
+                                <img class="img-list-playlist" src="images/playlist7.png">
+                                <span>
+                                    <strong> Graduation </strong>
+                                </span>
+                            </div>
+                            <div class="item-last-8">
+                                <img class="img-list-playlist" src="images/playlist4.png">
+                                <span>
+                                    <strong> Love You </strong>
+                                </span>
+                            </div>
+                            <div class="item-last-8">
+                                <img class="img-list-playlist" src="images/playlist8.png">
+                                <span>
+                                    <strong> Drake </strong>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="flex-showall">
+                            <span>
+                                <a class="link-list" href="#">
+                                    <strong>
+                                        Made For Gabriele Fuoti
+                                    </strong>
+
+                                </a>
+                            </span>
+                            <span>
+                                <a class="link-list showall" id="showall1" href="#">
+                                    Show all
+                                </a>
+                            </span>
+                        </div>
+                        <div class="made-for-you">
+                            <div class="item-made-for-you">
+                                <img class="img-list-dmix" src="images/dmix1.png">
+                                <span>
+                                    <strong> Daily Mix 1 </strong><br>
+                                    Travis Scott, 21 Savage, Mac Miller and more
+
+                                </span>
+                            </div>
+                            <div class="item-made-for-you">
+                                <img class="img-list-dmix" src="images/dmix2.png">
+                                <span>
+                                    <strong> Daily Mix 2 </strong><br>
+                                    Gemitaiz, Blanco, Kid Yugi and more
+                                </span>
+                            </div>
+                            <div class="item-made-for-you">
+                                <img class="img-list-dmix" src="images/dmix3.png">
+                                <span>
+                                    <strong> Daily Mix 3 </strong><br>
+                                    Gazzelle, Mahmood, sangiovanni and more
+                                </span>
+                            </div>
+                            <div class="item-made-for-you">
+                                <img class="img-list-dmix" src="images/dmix4.png">
+                                <span>
+                                    <strong> Daily Mix 4 </strong><br>
+                                    Post Malone, Juice WRLD, Lyrical Lemonade and more
+                                </span>
+                            </div>
+                            <div class="item-made-for-you">
+                                <img class="img-list-dmix" src="images/dmix5.png">
+                                <span>
+                                    <strong> Daily Mix 5 </strong><br>
+                                    Twentyone Pilots, Lana del Rey, Coldplay and more
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="flex-showall">
+                            <span>
+                                <a class="link-list" href="#">
+                                    <strong>
+                                        New releases for you
+                                    </strong>
+
+                                </a>
+                            </span>
+                            <span>
+                                <a class="link-list showall" id="showall2" href="#">
+                                    Show all
+                                </a>
+                            </span>
+                        </div>
+                        <div class="new-releases">
+                            <div class="item-made-for-you">
+                                <img class="img-list-dmix" src="images/new1.png">
+                                <span>
+                                    <strong> RADIO SAKURA </strong>
+                                </span>
+                                <br>
+                                <span>
+                                    Rose Villain
+                                </span>
+                            </div>
+                            <div class="item-made-for-you">
+                                <img class="img-list-dmix" src="images/new2.png">
+                                <span>
+                                    <strong> IL CORAGGIO DEI BAMBINI </strong>
+                                </span>
+                                <br>
+                                <span>
+                                    Geolier
+                                </span>
+                            </div>
+                            <div class="item-made-for-you">
+                                <img class="img-list-dmix" src="images/new3.png">
+                                <span>
+                                    <strong> I Nomi del Diavolo </strong>
+                                </span>
+                                <br>
+                                <span>
+                                    Kid Yugi
+                                </span>
+                            </div>
+                            <div class="item-made-for-you">
+                                <img class="img-list-dmix" src="images/new4.png">
+                                <span>
+                                    <strong> JACKBOYS </strong>
+                                </span>
+                                <br>
+                                <span>
+                                    JACKBOYS
+                                </span>
+                            </div>
+                            <div class="item-made-for-you">
+                                <img class="img-list-dmix" src="images/new5.png">
+                                <span>
+                                    <strong> For All The Dogs </strong>
+                                </span>
+                                <br>
+                                <span>
+                                    Drake
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="play">
+        <div class="flex-list-playlist-artist">
+            <a class="link-list" href="#">
+                <img class="img-list-playlist" src="images/playlist6.png">
+                <span>
+                    <strong> BUTTERFLY EFFECT </strong><br>
+                    Travis Scott
+                </span>
+            </a>
+        </div>
+        <div class="reproduction-buttons flex-reproduction">
+            <div>
+                <a class="link-list" href="#"> <img class="icon-play" src="images/casuale.png"> </a>
+                <a class="link-list" href="#"> <img class="icon-play" src="images/play-left.png"> </a>
+                <a class="link-list" href="#"> <img class="icon-play" src="images/play.png"></a>
+                <a class="link-list" href="#"> <img class="icon-play" src="images/play-right.png"></a>
+                <a class="link-list" href="#"> <img class="icon-play" src="images/loop.png"></a>
+            </div>
+            <div>
+                <span> 2:20 </span>
+                <a class="link-list" href="#"> <input id="reproduction" class="volume" type="range" min="0" max="100"
+                        value="75"></a>
+                <span> 3:10 </span>
+            </div>
+        </div>
+        <div class="reproduction-buttons flex-list-playlist-artist">
+            <div>
+                <a class="link-list" href="#"> <img class="icon-dx" src="images/micro.png"> </a>
+                <a class="link-list" href="#"> <img class="icon-dx" src="images/queue.png"> </a>
+                <a class="link-list" href="#"> <img class="icon-dx" src="images/pc.png"></a>
+                <a class="link-list" href="#"> <img class="icon-dx" src="images/volume.png"></a>
+                <a class="link-list" href="#"> <input class="volume" type="range" min="0" max="100" value="100"></a>
+                <a class="link-list" id="full-screen" href="#"> <img class="icon-dx" src="images/full.png"></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
