@@ -246,8 +246,9 @@ div {
     vertical-align: middle;
 }
 
-.item-last-8:hover {
+.item-last-8:hover, .item-made-for-you:hover {
     opacity: 0.8;
+    cursor: pointer;
 }
 
 .made-for-you, .new-releases {
@@ -268,10 +269,6 @@ div {
     display: inline;
     font-size:14px;
     margin-right: 18px;
-}
-
-.item-made-for-you:hover{
-    opacity: 0.8;
 }
 
 .item-made-for-you strong{

@@ -10,29 +10,31 @@ function fullScreen() {
 
 //mostra più playlist o nuove canzoni uscite
 function showAll(event){
-    let div = event.target.id;
-    let page_block = document.querySelector('.homepage-to-hidden');
+    const div = event.target.id;
+    const page_block = document.querySelector('.homepage-to-hidden');
     page_block.classList.add('hidden');
     
     if(div=="showall1"){
-        let madeforyou_hidden = document.querySelector("#hidden1");  
+        const madeforyou_hidden = document.querySelector("#hidden1");  
         madeforyou_hidden.classList.remove('hidden');
     }
     if(div=="showall2"){    
-        let releases_hidden = document.querySelector("#hidden2");
+        const releases_hidden = document.querySelector("#hidden2");
         releases_hidden.classList.remove('hidden');
     }
 }    
 
+//tasto torna indietro quando clicco 'showall'
 function getBack(){
-    let madeforyou_hidden = document.querySelector("#hidden1");
-    let releases_hidden = document.querySelector("#hidden2");
-    let page_block = document.querySelector('.homepage-to-hidden');
+  const madeforyou_hidden = document.querySelector("#hidden1");
+    const releases_hidden = document.querySelector("#hidden2");
+    const page_block = document.querySelector('.homepage-to-hidden');
     page_block.classList.remove('hidden');
     madeforyou_hidden.classList.add('hidden');
     releases_hidden.classList.add('hidden');    
 }
 
+//creo nuova playlist quando clicco il tasto +
 function createNewPlaylist(){
     const new_div = document.createElement('div');
     const new_a = document.createElement('a');
@@ -62,19 +64,19 @@ function createNewPlaylist(){
     existingDiv.appendChild(new_div);
 }
 
-let page = document.documentElement;
-let fullscreen = document.querySelector('#full-screen');
+const page = document.documentElement;
+const fullscreen = document.querySelector('#full-screen');
 fullscreen.addEventListener("click", fullScreen);
 
-let showall1 = document.querySelector("#showall1");
+const showall1 = document.querySelector("#showall1");
 showall1.addEventListener("click", showAll);
 
-let showall2 = document.querySelector("#showall2");
+const showall2 = document.querySelector("#showall2");
 showall2.addEventListener("click", showAll);
 
-let back = document.querySelector("#arrow-left");
+const back = document.querySelector("#arrow-left");
 back.addEventListener("click", getBack);
 
-let newplaylist = document.querySelector("#create-new-playlist");
+const newplaylist = document.querySelector("#create-new-playlist");
 newplaylist.addEventListener("click", createNewPlaylist);
 
