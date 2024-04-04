@@ -14,5 +14,5 @@ JS part include this functions:
 | Folder | Description |
 |-|-|
 | css | css' file for the Spotify's home page |
-| images | all the images used for the button and playlists |
+| images | all the images used for the playlists |
 
