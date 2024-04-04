@@ -321,34 +321,44 @@ div {
     vertical-align: middle;
 }
 
-#reproduction{
-    width: 500px;
+.icon-buttons{
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-bottom: 5px;
+    vertical-align: middle;
+}
+
+.flex-input{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-input-dx{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.reproduction, .volume{
+    background: linear-gradient(to right, white 50%, gray 50%);
+    border-radius: 10px;
+    height: 5px;
+    width: 450px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
 .volume {
     width: 100px;
-    -webkit-appearance: none;
-    appearance: none;
-    border-radius: 10px;
 }
 
-.volume::-webkit-slider-runnable-track{
-    background: lightgray;
-    height:5px;
-}
-
-.volume::-webkit-slider-thumb {
-    margin-top: -5px;
-    -webkit-appearance: none;
-    background-color: white;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;    
-}
-
-.volume::-webkit-slider-runnable-track:hover{
+.reproduction:hover, .volume:hover{
     background: rgb(30, 215, 96);
 }
+
 
 @media (max-width: 500px) {
     
@@ -362,7 +372,7 @@ div {
     }
 
     .flex-left{
-        order: 2;
+        order: 2; /*il div a sx nel mobile deve stare sotto e se non mettevo order sarebbe stato sopra*/
         width: 100%;
         flex-direction: row;
         justify-content: space-between;
